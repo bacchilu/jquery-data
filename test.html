@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $("#s").change(function () {
+                    var w = $(this).find(":selected");
+                    var content = w.data("content");
+                    alert(content);
+                });
+                
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Test</h1>
+        <select id="s">
+            <option value="0" data-content="Hello 1">Hello 1 (prima scelta)</option>
+            <option value="1" data-content="Hello 2">Hello 2 (seconda scelta)</option>
+        </select>
+    </body>
+</html>
